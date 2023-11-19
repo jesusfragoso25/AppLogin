@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbkg_4"
+    tools:context=".ui.activity.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/margin"
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="163dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Login User"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="124dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <EditText
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="text"
+                tools:layout_editor_absoluteX="70dp"
+                tools:layout_editor_absoluteY="190dp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="text"
+                tools:layout_editor_absoluteX="70dp"
+                tools:layout_editor_absoluteY="114dp" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="209dp"
+                android:layout_height="41dp"
+                android:text="Iniciar"
+                tools:layout_editor_absoluteX="71dp"
+                tools:layout_editor_absoluteY="263dp"
+                />
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="213dp"
+                android:layout_height="45dp"
+                android:text="Registrarse"
+                android:textColorHighlight="#4F4AE8"
+                android:textColorLink="#4F4AE8"
+                tools:layout_editor_absoluteX="70dp"
+                tools:layout_editor_absoluteY="320dp"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
